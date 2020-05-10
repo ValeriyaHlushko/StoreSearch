@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadingCell" id="YVR-ms-ooR">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YVR-ms-ooR" id="75d-aY-GM7">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPe-yH-vGY">
+                        <rect key="frame" x="143.5" y="30" width="88" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3R2-oB-3jK">
+                                <rect key="frame" x="0.0" y="0.0" width="68" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qlp-vh-bbM">
+                                <rect key="frame" x="68" y="0.0" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qlp-vh-bbM" secondAttribute="trailing" id="Aca-gc-Toj"/>
+                            <constraint firstAttribute="bottom" secondItem="qlp-vh-bbM" secondAttribute="bottom" id="CMi-Ym-yYJ"/>
+                            <constraint firstItem="3R2-oB-3jK" firstAttribute="leading" secondItem="WPe-yH-vGY" secondAttribute="leading" id="I87-Fn-NdC"/>
+                            <constraint firstAttribute="bottom" secondItem="3R2-oB-3jK" secondAttribute="bottom" id="cO5-Wj-E5H"/>
+                            <constraint firstItem="3R2-oB-3jK" firstAttribute="top" secondItem="WPe-yH-vGY" secondAttribute="top" id="kaD-Cb-fZ3"/>
+                            <constraint firstItem="qlp-vh-bbM" firstAttribute="leading" secondItem="3R2-oB-3jK" secondAttribute="trailing" id="rt8-IC-4oR"/>
+                            <constraint firstItem="qlp-vh-bbM" firstAttribute="top" secondItem="WPe-yH-vGY" secondAttribute="top" id="umW-hs-eFs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WPe-yH-vGY" firstAttribute="centerX" secondItem="75d-aY-GM7" secondAttribute="centerX" id="MVc-xj-kLg"/>
+                    <constraint firstItem="WPe-yH-vGY" firstAttribute="centerY" secondItem="75d-aY-GM7" secondAttribute="centerY" id="NZ6-ij-8pn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="113" y="77"/>
+        </tableViewCell>
+    </objects>
+</document>
